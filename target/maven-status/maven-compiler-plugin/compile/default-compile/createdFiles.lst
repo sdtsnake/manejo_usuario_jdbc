@@ -1,0 +1,5 @@
+Main.class
+work\oscarramos\manejousario\conexion\ConexionBaseDatos.class
+work\oscarramos\manejousario\respositorio\Repositorio.class
+work\oscarramos\manejousario\modelo\Usuario.class
+work\oscarramos\manejousario\servicio\UsuarioRespositorioImpl.class
