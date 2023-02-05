@@ -69,12 +69,13 @@ public class Main {
 
     private static void listarUsuarios() {
         limpiarPantalla();
+        Scanner sc = new Scanner(System.in);
         System.out.println("========================================");
         System.out.println("           Listado de usuarios          ");
         System.out.println("========================================");
         List<Usuario> usuarioList = usuarioRespositorio.findAll();
         usuarioList.stream().forEach(System.out::println);
-
+        String acept = sc.nextLine();
     }
 
     private static void crearUsuario() {
@@ -110,6 +111,10 @@ public class Main {
         } else {
             System.out.println("========================================");
             System.out.println("     Datos actrualiza del usuario       ");
+            System.out.println("========================================");
+            System.out.printf("Nombre   : %s \n", usuario.getUserName().toString());
+            System.out.printf("Email    : %s \n", usuario.getEmail().toString());
+            System.out.printf("Password : %s \n", usuario.getPassword().toString());
             System.out.println("========================================");
             System.out.print("Nombre de usuario              : ");
             String nombre = sc.nextLine();
